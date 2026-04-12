@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Semantic Tables and Media</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-<table border="1" cellpadding="10" cellspacing="0" width="100%" style="font-family: Arial, sans-serif;">
-  <thead bgcolor="#b05a5a">
-    <tr style="color: white;">
-      <th>Roll numbers</th>
-      <th>Names</th>
-    </tr>
-  </thead>
-  <tbody align="center">
-    <tr>
-      <td>101</td>
-      <td>Alice Johnson</td>
-    </tr>
-    <tr bgcolor="#f9f9f9">
-      <td>102</td>
-      <td>Bob Smith</td>
-    </tr>
-    <tr>
-      <td>103</td>
-      <td>Charlie Brown</td>
-    </tr>
-  </tbody>
-</table>
 
-<h3>List of medias</h3>
+  <!-- Semantic Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Amit</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Priya</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Rahul</td>
+      </tr>
+    </tbody>
+  </table>
 
-<ol>
-  <li>
-    <figure>
-      <img src="https://picsum.photos/id/123/200/300" alt="Placeholder Image" width="200">
-      <figcaption>Image Resource</figcaption>
-    </figure>
-  </li>
+  <!-- Heading between table and list -->
+  <h2>List of medias</h2>
 
-  <li>
-    <p>Video Resource:</p>
-    <video width="320" height="240" controls>
-      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-    </video>
-  </li>
+  <!-- Ordered List with Media -->
+  <ol>
+    <li>
+      <img src="https://picsum.photos/id/123/200/300" alt="Sample image from Picsum">
+    </li>
+    <li>
+      <video controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+    <li>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </li>
+  </ol>
 
-  <li>
-    <p>Audio Resource:</p>
-    <audio controls>
-      <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-    </audio>
-  </li>
-</ol>
 </body>
-
 </html>
