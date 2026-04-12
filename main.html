@@ -1,67 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Semantic Tables and Media</title>
+  <style>
+    /* Targeting the table by its ID */
+    #student-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    #student-table th {
+      background-color: #333;
+      color: white;
+      padding: 12px;
+    }
+
+    #student-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Targeting the media list specifically */
+    .media-container img {
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Semantic Table with caption -->
-  <table>
-    <caption>Student Roll Numbers and Names</caption>
+  <table id="student-table">
     <thead>
       <tr>
-        <th scope="col">Roll Number</th>
-        <th scope="col">Name</th>
+        <th>Roll numbers</th>
+        <th>Names</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>201</td>
-        <td>Neha</td>
+        <td>101</td>
+        <td>Alice Johnson</td>
       </tr>
       <tr>
-        <td>202</td>
-        <td>Arjun</td>
+        <td>102</td>
+        <td>Bob Smith</td>
       </tr>
       <tr>
-        <td>203</td>
-        <td>Kavya</td>
+        <td>103</td>
+        <td>Charlie Brown</td>
       </tr>
     </tbody>
   </table>
 
-  <!-- Heading between table and list -->
-  <h2>List of medias</h2>
+  <h3>List of medias</h3>
 
-  <!-- Ordered List with semantic grouping -->
-  <ol>
+  <ol class="media-container">
     <li>
-      <figure>
-        <img src="https://picsum.photos/id/123/200/300" alt="Random sample image">
-        <figcaption>Sample Image</figcaption>
-      </figure>
+      <img src="https://picsum.photos/id/123/200/300" alt="Scenic View">
     </li>
+
     <li>
-      <figure>
-        <video controls>
-          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>Big Buck Bunny Video</figcaption>
-      </figure>
+      <video width="300" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      </video>
     </li>
+
     <li>
-      <figure>
-        <audio controls>
-          <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-          Your browser does not support the audio element.
-        </audio>
-        <figcaption>Epoq-Lepidoptera Audio</figcaption>
-      </figure>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+      </audio>
     </li>
   </ol>
 
 </body>
 </html>
-
