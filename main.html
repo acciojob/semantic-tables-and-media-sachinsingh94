@@ -6,26 +6,27 @@
 </head>
 <body>
 
-  <!-- Semantic Table -->
+  <!-- Semantic Table with caption -->
   <table>
+    <caption>Student Roll Numbers and Names</caption>
     <thead>
       <tr>
-        <th>Roll Number</th>
-        <th>Name</th>
+        <th scope="col">Roll Number</th>
+        <th scope="col">Name</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>101</td>
-        <td>Amit</td>
+        <td>201</td>
+        <td>Neha</td>
       </tr>
       <tr>
-        <td>102</td>
-        <td>Priya</td>
+        <td>202</td>
+        <td>Arjun</td>
       </tr>
       <tr>
-        <td>103</td>
-        <td>Rahul</td>
+        <td>203</td>
+        <td>Kavya</td>
       </tr>
     </tbody>
   </table>
@@ -33,24 +34,34 @@
   <!-- Heading between table and list -->
   <h2>List of medias</h2>
 
-  <!-- Ordered List with Media -->
+  <!-- Ordered List with semantic grouping -->
   <ol>
     <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Sample image from Picsum">
+      <figure>
+        <img src="https://picsum.photos/id/123/200/300" alt="Random sample image">
+        <figcaption>Sample Image</figcaption>
+      </figure>
     </li>
     <li>
-      <video controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <figure>
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Big Buck Bunny Video</figcaption>
+      </figure>
     </li>
     <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
+      <figure>
+        <audio controls>
+          <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Epoq-Lepidoptera Audio</figcaption>
+      </figure>
     </li>
   </ol>
 
 </body>
 </html>
+
