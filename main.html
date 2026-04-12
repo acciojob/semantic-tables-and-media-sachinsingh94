@@ -1,77 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    /* Targeting the table by its ID */
-    #student-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    #student-table th {
-      background-color: #333;
-      color: white;
-      padding: 12px;
-    }
-
-    #student-table td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-    }
-
-    /* Targeting the media list specifically */
-    .media-container img {
-      border-radius: 8px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    }
-  </style>
+    <title>Semantic Tables and Media</title>
 </head>
 <body>
 
-  <table id="student-table">
-    <thead>
-      <tr>
-        <th>Roll numbers</th>
-        <th>Names</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>101</td>
-        <td>Alice Johnson</td>
-      </tr>
-      <tr>
-        <td>102</td>
-        <td>Bob Smith</td>
-      </tr>
-      <tr>
-        <td>103</td>
-        <td>Charlie Brown</td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll numbers</th>
+                <th>Names</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Student One</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Student Two</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Student Three</td>
+            </tr>
+        </tbody>
+    </table>
 
-  <h3>List of medias</h3>
+    <h3>List of medias</h3>
 
-  <ol class="media-container">
-    <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Scenic View">
-    </li>
+    <ol>
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Placeholder Image">
+        </li>
 
-    <li>
-      <video width="300" controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-      </video>
-    </li>
+        <li>
+            <video controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            </video>
+        </li>
 
-    <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-      </audio>
-    </li>
-  </ol>
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            </audio>
+        </li>
+    </ol>
 
 </body>
 </html>
